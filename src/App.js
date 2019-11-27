@@ -2,37 +2,50 @@ import React from 'react';
 import styled from 'styled-components'
 import './App.css'
 
-const Header = styled.div`
-display: flex
-flex-direction: column
-align-items: center
-justify-content: center
-height: 100vh
-margin: 0`
-
 const Title = styled.h1`
 font-family: 'Ubuntu', sans-serif;
-font-weight: 400
-font-size: 5.5rem
-background-color: pink
-border: solid 2px pink
+font-weight: 700
+padding: 0
+margin: 0
+font-size: 8.5rem
+opacity: 1`
+
+const SubTitle = styled.h3`
+font-size: 2.5rem
+margin: 0
+font-family: sans-serif
+font-weight: 300
+
+`
+
+const TitleDiv = styled.div`
 padding: 5px
-color: #262626
-opacity: 1
-z-index: 10
-width: 100vw`
+color: white
+opacity: .9
+text-shadow: 1px 1px #262626
+`
+
+const Div = styled.div`
+height: 100vh
+background: white`
 
 function App() {
   return (
     <div className="App">
-      <Header>
-       
+      <header>
+       <nav>
+         <SubTitle>about</SubTitle>
+         <SubTitle>portfolio</SubTitle>
+       </nav>
 
+      <TitleDiv>
       <Title>Fred Davison</Title>
-      <p>Full-stack web developer</p>
+      <SubTitle>full-stack web developer</SubTitle>
+      </TitleDiv>
 
 
-      </Header>
+      </header>
+      <Div></Div>
     </div>
   );
 }
