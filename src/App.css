@@ -28,6 +28,7 @@ nav {
   justify-content: space-around;
   width: 300px;
   color: #262626;
+  z-index: 5;
 }
 
 
