@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css'
+import img from './assets/In.png'
 
 const Title = styled.h1`
 font-family: 'Poppins', sans-serif;
@@ -42,6 +43,20 @@ height: 100vh
 padding: 50px
 background: rgb(161,161,161)`
 
+const Icons = styled.div`
+position: fixed
+left: 50px
+display: flex
+flex-direction: column
+`
+
+const ImgDiv = styled.div`
+background: url(${img})
+background-size: 100% 
+height: 65px;
+margin: 5px 0;
+border: solid red`
+
 function App() {
   return (
     <div className="App">
@@ -50,6 +65,10 @@ function App() {
          <SubTitle>about</SubTitle>
          <SubTitle>portfolio</SubTitle>
        </nav>
+      <Icons>
+        <img src='https://image.flaticon.com/icons/png/512/25/25231.png'/>
+        <div className = 'img'></div>
+      </Icons>
 
       <TitleDiv>
       <Title>Fred Davison</Title>
