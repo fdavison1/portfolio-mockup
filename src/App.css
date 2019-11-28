@@ -26,7 +26,7 @@ nav {
   top: 20px;
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  width: 250px;
   color: #262626;
   z-index: 5;
 }
@@ -36,15 +36,45 @@ img {
   margin: 5px 0;
 }
 
-.img {
-  background: url('./assets/In.png');
-  background-size: 100%; 
-  height: 65px;
-  width: auto;
+img:hover {
+  cursor: pointer;
+}
+
+.img, .img2 {
   margin: 5px 0;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+
+.img {
+  background: url('./assets/25231.png');
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.img:hover {
+  cursor: pointer;
+  background: url('./assets/cat-pink.png');
+  background-size: 100%; 
+  height: 60px;
+  width: 60px;
+}
+
+.img2 {
+  background: url('./assets/In.png');
+  background-size: 100%; 
+  height: 55px;
+  width: 55px;
+}
+
+.img2:hover {
+  cursor: pointer;
+  background: url('./assets/In-pink.png');
+  background-size: 100%; 
+  height: 55px;
+  width: 55px;
 }

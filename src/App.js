@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css'
-import img from './assets/In.png'
 
 const Title = styled.h1`
 font-family: 'Poppins', sans-serif;
@@ -16,21 +15,25 @@ font-family: 'Poppins', sans-serif;
 font-weight: 700
 padding: 0
 margin: 0
-font-size: 5rem
+font-size: 3.5rem
 opacity: 1`
 
 const SubTitle = styled.h3`
-font-size: 2.5rem
+font-size: 2rem
 margin: 0
 font-family: sans-serif
 font-weight: 300
+&:hover {
+  color: pink
+  cursor: pointer
+}
 `
 
 const TitleDiv = styled.div`
 padding: 5px
 color: white
 opacity: .9
-text-shadow: 1px 1px #262626
+text-shadow: 2px 2px #262626
 `
 
 const Div1 = styled.div`
@@ -45,17 +48,14 @@ background: rgb(161,161,161)`
 
 const Icons = styled.div`
 position: fixed
-left: 50px
+right: 25px
+bottom: 25px
 display: flex
 flex-direction: column
+align-items: center
+justify-content: center
+opacity: .85
 `
-
-const ImgDiv = styled.div`
-background: url(${img})
-background-size: 100% 
-height: 65px;
-margin: 5px 0;
-border: solid red`
 
 function App() {
   return (
@@ -66,13 +66,14 @@ function App() {
          <SubTitle>portfolio</SubTitle>
        </nav>
       <Icons>
-        <img src='https://image.flaticon.com/icons/png/512/25/25231.png'/>
+        {/* <img src='https://image.flaticon.com/icons/png/512/25/25231.png'/> */}
         <div className = 'img'></div>
+        <div className = 'img2'></div>
       </Icons>
 
       <TitleDiv>
       <Title>Fred Davison</Title>
-      <SubTitle>full-stack web developer</SubTitle>
+      <Title2>full-stack web developer</Title2>
       </TitleDiv>
 
 
