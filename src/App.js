@@ -19,21 +19,24 @@ font-size: 3.5rem
 opacity: 1`
 
 const SubTitle = styled.h3`
+transition: color .5s ease;
 font-size: 2rem
 margin: 0
+color: #262626
 font-family: sans-serif
 font-weight: 300
 &:hover {
   color: pink
   cursor: pointer
 }
+opacity: .85
 `
 
 const TitleDiv = styled.div`
 padding: 5px
 color: white
 opacity: .9
-text-shadow: 2px 2px #262626
+text-shadow: 1.5px 1.5px #262626
 `
 
 const Div1 = styled.div`

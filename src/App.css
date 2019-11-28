@@ -50,6 +50,7 @@ img:hover {
 }
 
 .img {
+  transition: background .5s ease;
   background: url('./assets/25231.png');
   background-size: 100%;
   height: 60px;
@@ -65,6 +66,7 @@ img:hover {
 }
 
 .img2 {
+  transition: background .5s ease;
   background: url('./assets/In.png');
   background-size: 100%; 
   height: 55px;
