@@ -14,7 +14,7 @@ const Title2 = styled.h1`
 font-family: 'Poppins', sans-serif;
 font-weight: 700
 padding: 0
-margin: 0
+margin-top: 50px
 font-size: 3.5rem
 opacity: 1`
 
@@ -59,33 +59,46 @@ align-items: center
 justify-content: center
 opacity: .85
 `
+const A = styled.a`
+text-decoration: none`
 
 function App() {
   return (
     <div className="App">
       <header>
-       <nav>
-         <SubTitle>about</SubTitle>
-         <SubTitle>portfolio</SubTitle>
-       </nav>
-      <Icons>
-        {/* <img src='https://image.flaticon.com/icons/png/512/25/25231.png'/> */}
-        <div className = 'img'></div>
-        <div className = 'img2'></div>
-      </Icons>
+        <nav>
+          <A href='#about'>
+            <SubTitle>about</SubTitle>
+          </A>
+          <A href='#portfolio'>
+            <SubTitle>portfolio</SubTitle>
+          </A>
 
-      <TitleDiv>
-      <Title>Fred Davison</Title>
-      <Title2>full-stack web developer</Title2>
-      </TitleDiv>
+        </nav>
+        <Icons>
+          <a href='https://github.com/fdavison1' target='_blank'>
+            <div className='img'></div>
+          </a>
+          <a href='https://www.linkedin.com/in/fred-davison-220425196/' target='_blank'>
+            <div className='img2'></div>
+          </a>
+
+        </Icons>
+
+        <TitleDiv>
+          <Title>Fred Davison</Title>
+          <Title2>full-stack web developer</Title2>
+        </TitleDiv>
 
 
       </header>
       <Div1>
+        <a name='about'></a>
         <Title2>about</Title2>
       </Div1>
 
       <Div2>
+        <a name='portfolio'></a>
         <Title2>portfolio</Title2>
       </Div2>
 
