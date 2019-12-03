@@ -76,10 +76,12 @@ function App() {
 
         </nav>
         <Icons>
-          <a href='https://github.com/fdavison1' target='_blank'>
+          <a href='https://github.com/fdavison1' target='_blank'
+          rel="noopener noreferrer">
             <div className='img'></div>
           </a>
-          <a href='https://www.linkedin.com/in/fred-davison-220425196/' target='_blank'>
+          <a href='https://www.linkedin.com/in/fred-davison-220425196/' target='_blank'
+          rel="noopener noreferrer">
             <div className='img2'></div>
           </a>
 
