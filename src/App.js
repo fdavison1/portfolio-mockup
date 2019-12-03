@@ -6,7 +6,8 @@ const Title = styled.h1`
 font-family: Poppins, sans-serif;
 font-weight: 700
 padding: 0
-margin: 0
+margin: 10px
+line-height: 5rem
 font-size: 5rem
 opacity: 1`
 
@@ -39,7 +40,7 @@ opacity: .9
 
 const Div1 = styled.div`
 box-sizing: border-box
-height: 100vh
+height: 110vh
 padding: 50px
 background: white`
 
