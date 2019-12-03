@@ -3,19 +3,19 @@ import styled from 'styled-components'
 import './App.css'
 
 const Title = styled.h1`
-font-family: 'Poppins', sans-serif;
+font-family: Poppins, sans-serif;
 font-weight: 700
 padding: 0
 margin: 0
-font-size: 8rem
+font-size: 5rem
 opacity: 1`
 
 const Title2 = styled.h1`
-font-family: 'Poppins', sans-serif;
-font-weight: 700
+font-family:  sans-serif;
+font-weight: 200
 padding: 0
-margin-top: 50px
-font-size: 3.5rem
+margin: 0
+font-size: 2.75rem
 opacity: 1`
 
 const SubTitle = styled.h3`
@@ -26,7 +26,7 @@ color: #262626
 font-family: sans-serif
 font-weight: 300
 &:hover {
-  color: pink
+  color: purple
   cursor: pointer
 }
 opacity: .85
@@ -34,20 +34,20 @@ opacity: .85
 
 const TitleDiv = styled.div`
 padding: 5px
-color: white
 opacity: .9
-text-shadow: 1.5px 1.5px #262626
 `
 
 const Div1 = styled.div`
+box-sizing: border-box
 height: 100vh
 padding: 50px
 background: white`
 
 const Div2 = styled.div`
+box-sizing: border-box
 height: 100vh
 padding: 50px
-background: rgb(161,161,161)`
+background: rgb(222,222,222)`
 
 const Icons = styled.div`
 position: fixed
