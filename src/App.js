@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import './App.css'
 
 const Title = styled.h1`
+color: #262626
 font-family: Poppins, sans-serif;
 font-weight: 700
 padding: 0
@@ -12,6 +13,7 @@ font-size: 5rem
 opacity: 1`
 
 const Title2 = styled.h1`
+color: #262626
 font-family:  sans-serif;
 font-weight: 200
 padding: 0
@@ -96,12 +98,12 @@ function App() {
 
       </header>
       <Div1>
-        <a name='about'></a>
+        <A name='about'></A>
         <Title2>about</Title2>
       </Div1>
 
       <Div2>
-        <a name='portfolio'></a>
+        <A name='portfolio'></A>
         <Title2>portfolio</Title2>
       </Div2>
 
