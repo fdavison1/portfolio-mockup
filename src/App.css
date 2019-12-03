@@ -81,7 +81,7 @@ img:hover {
   width: 55px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1025px){
   .App {
     background: white;
     opacity: 1;
