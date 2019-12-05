@@ -37,6 +37,20 @@ font-weight: 300
 opacity: .85
 `
 
+const SubTitle2 = styled.h3`
+transition: color .5s ease;
+font-size: 2rem
+margin: 0
+color: white
+font-family: sans-serif
+font-weight: 300
+&:hover {
+  color: purple
+  cursor: pointer
+}
+opacity: .85
+`
+
 const TitleDiv = styled.div`
 padding: 5px
 opacity: .9
@@ -71,31 +85,30 @@ const A = styled.a`
 text-decoration: none`
 
 const ListDiv = styled.div`
-border: 1px solid #999999
-background: oldlace
+
 margin: 45px
 border-radius: 10px
 padding: 20px 0
-box-sizing: border-box`
+box-sizing: border-box
+color: #262626
+background: rgb(222,222,222)`
 
 const Thumbnail = styled.img`
+transition: .5s ease
 height: 300px
-border: 1px solid #999999
 margin: 20px
 border-radius: 5px
-box-sizing: border-box`
-
-const Title3 = styled.h1`
-font-family:  sans-serif
-font-weight: 300
-color: #262626`
+box-sizing: border-box
+&:hover {
+  border: 2px solid purple
+}`
 
 const Paragraph = styled.p`
 font-size: 1.2rem
 font-family: sans-serif
 font-weight: 200
 text-align: left
-margin: 0 125px`
+margin: 10px 125px`
 
 function App() {
   return (
@@ -135,7 +148,7 @@ function App() {
 
         <ListDiv>
         <A href='https://fredlist.app' target='_blank'>
-        <Title3>Simple List App</Title3>
+        <SubTitle>Simple List App</SubTitle>
         </A>
         <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain. </Paragraph>
         <a href='https://fredlist.app' target='_blank'>
