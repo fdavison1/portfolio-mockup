@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css'
+import Landing from './assets/screenshots/landing.png'
+import Dash from './assets/screenshots/dash.png'
 
 const Title = styled.h1`
 color: #262626
@@ -41,10 +43,13 @@ opacity: .9
 `
 
 const Div1 = styled.div`
+display: flex
+flex-direction: column
 box-sizing: border-box
 height: 110vh
 padding: 50px
-background: white`
+background: white
+justify-content: center`
 
 const Div2 = styled.div`
 box-sizing: border-box
@@ -65,16 +70,43 @@ opacity: .85
 const A = styled.a`
 text-decoration: none`
 
+const ListDiv = styled.div`
+border: 1px solid #999999
+background: oldlace
+margin: 45px
+border-radius: 10px
+padding: 20px 0
+box-sizing: border-box`
+
+const Thumbnail = styled.img`
+height: 300px
+border: 1px solid #999999
+margin: 20px
+border-radius: 5px
+box-sizing: border-box`
+
+const Title3 = styled.h1`
+font-family:  sans-serif
+font-weight: 300
+color: #262626`
+
+const Paragraph = styled.p`
+font-size: 1.2rem
+font-family: sans-serif
+font-weight: 200
+text-align: left
+margin: 0 125px`
+
 function App() {
   return (
     <div className="App">
       <header>
         <nav>
-          <A href='#about'>
-            <SubTitle>about</SubTitle>
-          </A>
           <A href='#portfolio'>
             <SubTitle>portfolio</SubTitle>
+          </A>
+          <A href='#about'>
+            <SubTitle>about</SubTitle>
           </A>
 
         </nav>
@@ -98,13 +130,27 @@ function App() {
 
       </header>
       <Div1>
-        <A name='about'></A>
-        <Title2>about</Title2>
+        <A name='portfolio'></A>
+        <Title2>portfolio</Title2>
+
+        <ListDiv>
+        <A href='https://fredlist.app' target='_blank'>
+        <Title3>Simple List App</Title3>
+        </A>
+        <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain. </Paragraph>
+        <a href='https://fredlist.app' target='_blank'>
+        <Thumbnail src={Landing} alt='thumbnail of List App Landing Page'/>
+        </a>
+        <a href='https://fredlist.app' target='_blank'>
+        <Thumbnail src={Dash} alt='thumbnail of List App Dash Page'/>
+        </a>
+        </ListDiv>
+
       </Div1>
 
       <Div2>
-        <A name='portfolio'></A>
-        <Title2>portfolio</Title2>
+        <A name='about'></A>
+        <Title2>about</Title2>
       </Div2>
 
     </div>
