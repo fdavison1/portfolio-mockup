@@ -235,9 +235,13 @@ function App() {
         <AboutDiv>
           <Banner2>
           <MobileDiv>
+          <a href='https://fredlist.app/' target='_blank'>
           <Thumbnail src={Landing} />
+          </a>
           <ListApp>
+          <A href='https://fredlist.app/' target='_blank'>
           <SubTitle>List App</SubTitle>
+          </A>
           <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain.</Paragraph>
           </ListApp>
           </MobileDiv>
