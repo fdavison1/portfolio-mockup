@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import './App.css'
 import Landing from './assets/screenshots/landing.png'
-import Dash from './assets/screenshots/dash.png'
+// import Dash from './assets/screenshots/dash.png'
 import Headshot from './assets/Fred.jpg'
 import Footer from './Footer'
 
@@ -43,6 +43,20 @@ padding: 5px
 opacity: .9
 `
 
+const Div1 = styled.div`
+display: flex
+flex-direction: column
+align-items: center
+justify-content: center
+box-sizing: border-box
+padding: 50px
+background: white
+@media (max-width: 500px){
+  background: #6e7889;
+  margin: 0
+  padding: 0
+  height: 100vh
+}`
 
 const Div2 = styled.div`
 display: flex
@@ -51,7 +65,12 @@ align-items: center
 justify-content: center
 box-sizing: border-box
 padding: 50px
-background: white`
+background: white
+@media (max-width: 500px){
+  background: #f3b54a;
+  margin: 0
+  padding: 0
+}`
 
 const Icons = styled.div`
 position: fixed
@@ -62,7 +81,11 @@ flex-direction: column
 align-items: center
 justify-content: center
 opacity: .85
-`
+@media (max-width: 500px){
+  position: absolute
+  bottom: 15px
+}`
+
 const A = styled.a`
 text-decoration: none`
 
@@ -77,6 +100,9 @@ border: 1px solid #999999
 &:hover {
   border: 2px solid purple
   cursor: pointer
+}
+@media (max-width: 500px){
+  height: 200px
 }`
 
 const Paragraph = styled.p`
@@ -84,7 +110,10 @@ font-size: 1.2rem
 font-family: sans-serif
 font-weight: 200
 text-align: left
-margin: 10px`
+margin: 10px
+@media (max-width: 500px){
+  text-align: center
+}`
 
 const HeadshotImg = styled.img`
 border: 1px solid #262626
@@ -101,14 +130,23 @@ border-radius: 10px
 padding: 20px 0
 box-sizing: border-box
 display: flex
-justify-content: center`
+justify-content: center
+`
 
 const ListItem = styled.li`
 font-family: sans-serif
 font-weight: 200
 font-size: 1.2rem
 text-align: left
-line-height: 2rem`
+line-height: 2rem
+@media (max-width: 500px){
+  font-size: 1rem
+  line-height: 1.5rem
+  width: 400px
+  list-style-type: none
+  text-align: center
+  padding: 0
+}`
 
 const Banner = styled.div`
 background: #f3b54a;
@@ -118,6 +156,12 @@ background: #f3b54a;
   height: 200px
   align-items: center
   width: 1000px
+  @media (max-width: 500px){
+    padding: 0
+    width: 400px
+    flex-direction: column
+    height: 100vh
+  }
   `
 
 const Banner2 = styled.div`
@@ -128,9 +172,27 @@ background: #6e7889
   height: 200px
   align-items: center
   width: 1000px
-  `
+  @media (max-width: 500px){
+    padding: 0
+    flex-decoration: column
+    height: auto
+    width: 400px
+  }`
 
-const ListApp = styled.div``
+  const Break =styled.br`
+  display: none
+  @media (max-width: 500px){
+    display: block
+  }`
+
+const ListApp = styled.div`
+@media (max-width: 500px){
+  text-align: center
+}`
+
+
+
+const MobileDiv = styled.div``
 
 function App() {
   return (
@@ -154,7 +216,6 @@ function App() {
             rel="noopener noreferrer">
             <div className='img2'></div>
           </a>
-
         </Icons>
 
         <TitleDiv>
@@ -165,32 +226,34 @@ function App() {
 
       </header>
 
-      <Div2>
+      <Div1>
         <A name='about'></A>
         <Title2>portfolio</Title2>
         <AboutDiv>
           <Banner2>
+          <MobileDiv>
           <Thumbnail src={Landing} />
           <ListApp>
           <SubTitle>List App</SubTitle>
           <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain.</Paragraph>
           </ListApp>
+          </MobileDiv>
         </Banner2>
         </AboutDiv>
-      </Div2>
-      <Div2>
-
+      </Div1>
+      
+      <Div2 className='about'>
         <A name='about'></A>
         <Title2>about</Title2>
         <AboutDiv>
           <Banner>
           <HeadshotImg src={Headshot} />
           <ul>
-            <ListItem><span>Student at DevMountain</span> Immersive Web-Development Course</ListItem>
-            <ListItem><span>BBA Economics</span> University of Georgia</ListItem>
-            <ListItem><span>BS Industrial Engineering</span> Texas Tech University</ListItem>
-            <ListItem><span>3 Years as Trainmaster </span> Los Angeles and Richmond, CA</ListItem>
-            <ListItem><span>Manager of Logistics</span> Philmont Scout Ranch</ListItem>
+            <ListItem><span>Student at DevMountain</span> <Break />Immersive Web-Development Course</ListItem>
+            <ListItem><span>BBA Economics</span> <Break/>University of Georgia</ListItem>
+            <ListItem><span>BS Industrial Engineering</span> <Break/>Texas Tech University</ListItem>
+            <ListItem><span>3 Years as Trainmaster </span> <Break/>Los Angeles and Richmond, CA</ListItem>
+            <ListItem><span>Manager of Logistics</span> <Break/>Philmont Scout Ranch</ListItem>
           </ul>
         </Banner>
         </AboutDiv>
@@ -199,6 +262,7 @@ function App() {
 
 
       <Footer/>
+   
     </div>
   );
 }

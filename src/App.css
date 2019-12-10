@@ -16,7 +16,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
-background-color: rgba(100,100,100, 0.2);
+background-color: rgba(112,120,136, 0.3);
 margin: 0;
 }
 
@@ -35,10 +35,6 @@ img {
   height: 65px;
   margin: 5px 0;
 }
-
-/* img:hover {
-  cursor: pointer;
-} */
 
 .img, .img2 {
   margin: 5px 0;
@@ -106,4 +102,11 @@ ul {
   background: #f3b54a;
   padding: 35px;
   border-radius: 3px;
+}
+
+@media (max-width: 500px){
+  ul {
+  width: 400px;
+  padding: 0;
+  }
 }

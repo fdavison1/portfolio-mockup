@@ -37,12 +37,28 @@ font-size: 1.2rem
 font-family: sans-serif
 font-weight: 200`
 
+const Break = styled.br`
+  display: none
+  @media (max-width: 500px){
+    display: block
+  }`
+
+const MobileIcons = styled.div`
+display: none
+  @media (max-width: 500px){
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    width: 50vw
+    padding-bottom: 15px
+  }`
+
 export default function Footer() {
     return (
         <Stripe>
             <Foot>
                 <Paragraph>
-                    <span>Fred Davison</span> DevMountain Student 2019
+                    <span>Fred Davison</span><Break /> DevMountain Student 2019
                 </Paragraph>
                 <LogoBox>
                     <a href='https://www.linkedin.com/in/fred-davison-220425196/' target='_blank'
@@ -55,6 +71,17 @@ export default function Footer() {
                     </a>
                 </LogoBox>
             </Foot>
+            <MobileIcons>
+                <a href='https://github.com/fdavison1' target='_blank'
+                    rel="noopener noreferrer">
+                    <div className='img'></div>
+                </a>
+                <a href='https://www.linkedin.com/in/fred-davison-220425196/' target='_blank'
+                    rel="noopener noreferrer">
+                    <div className='img2'></div>
+                </a>
+            </MobileIcons>
+
         </Stripe>
     )
 }
