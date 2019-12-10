@@ -10,7 +10,8 @@ align-items: center
 box-sizing: border-box
 width: 100%
 height: 165px
-background: rgb(222,222,222)`
+background: #6e7889`
+
 const Foot = styled.div`
 margin: 10px
 padding: 0 50px

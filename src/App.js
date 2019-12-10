@@ -36,7 +36,6 @@ font-weight: 300
   color: purple
   cursor: pointer
 }
-opacity: .85
 `
 
 const TitleDiv = styled.div`
@@ -44,23 +43,15 @@ padding: 5px
 opacity: .9
 `
 
-const Div1 = styled.div`
-display: flex
-flex-direction: column
-box-sizing: border-box
-height: 110vh
-padding: 50px
-background: white
-justify-content: center`
 
 const Div2 = styled.div`
 display: flex
 flex-direction: column
 align-items: center
+justify-content: center
 box-sizing: border-box
 padding: 50px
 background: white`
-// background: rgb(222,222,222)
 
 const Icons = styled.div`
 position: fixed
@@ -75,13 +66,6 @@ opacity: .85
 const A = styled.a`
 text-decoration: none`
 
-const ListDiv = styled.div`
-margin: 45px
-border-radius: 10px
-padding: 20px 0
-box-sizing: border-box
-color: #262626
-background: rgb(222,222,222)`
 
 const Thumbnail = styled.img`
 transition: .5s ease
@@ -89,8 +73,10 @@ height: 300px
 margin: 20px
 border-radius: 5px
 box-sizing: border-box
+border: 1px solid #999999
 &:hover {
   border: 2px solid purple
+  cursor: pointer
 }`
 
 const Paragraph = styled.p`
@@ -98,18 +84,19 @@ font-size: 1.2rem
 font-family: sans-serif
 font-weight: 200
 text-align: left
-margin: 10px 125px`
+margin: 10px`
 
 const HeadshotImg = styled.img`
 border: 1px solid #262626
 height: 300px
 border-radius: 50%
-margin: 20px`
+margin: 20px
+cursor: default`
 
 const AboutDiv = styled.div`
 display: flex
 align-items: center
-margin: 45px
+margin: 15px
 border-radius: 10px
 padding: 20px 0
 box-sizing: border-box
@@ -123,17 +110,39 @@ font-size: 1.2rem
 text-align: left
 line-height: 2rem`
 
+const Banner = styled.div`
+background: #f3b54a;
+  padding: 35px;
+  border-radius: 3px;
+  display: flex
+  height: 200px
+  align-items: center
+  width: 1000px
+  `
+
+const Banner2 = styled.div`
+background: #6e7889
+  padding: 35px;
+  border-radius: 3px;
+  display: flex
+  height: 200px
+  align-items: center
+  width: 1000px
+  `
+
+const ListApp = styled.div``
+
 function App() {
   return (
     <div className="App">
       <header>
         <nav>
-          <A href='#about'>
+          {/* <A href='#about'>
             <SubTitle>about</SubTitle>
           </A>
           <A href='#portfolio'>
             <SubTitle>portfolio</SubTitle>
-          </A>
+          </A> */}
 
         </nav>
         <Icons>
@@ -158,8 +167,23 @@ function App() {
 
       <Div2>
         <A name='about'></A>
+        <Title2>portfolio</Title2>
+        <AboutDiv>
+          <Banner2>
+          <Thumbnail src={Landing} />
+          <ListApp>
+          <SubTitle>List App</SubTitle>
+          <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain.</Paragraph>
+          </ListApp>
+        </Banner2>
+        </AboutDiv>
+      </Div2>
+      <Div2>
+
+        <A name='about'></A>
         <Title2>about</Title2>
         <AboutDiv>
+          <Banner>
           <HeadshotImg src={Headshot} />
           <ul>
             <ListItem><span>Student at DevMountain</span> Immersive Web-Development Course</ListItem>
@@ -168,27 +192,10 @@ function App() {
             <ListItem><span>3 Years as Trainmaster </span> Los Angeles and Richmond, CA</ListItem>
             <ListItem><span>Manager of Logistics</span> Philmont Scout Ranch</ListItem>
           </ul>
+        </Banner>
         </AboutDiv>
       </Div2>
 
-      <Div1>
-        <A name='portfolio'></A>
-        <Title2>portfolio</Title2>
-
-        <ListDiv>
-          <A href='https://fredlist.app' target='_blank'>
-            <SubTitle>Simple List App</SubTitle>
-          </A>
-          <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain. </Paragraph>
-          <a href='https://fredlist.app' target='_blank' rel="noopener noreferrer">
-            <Thumbnail src={Landing} alt='thumbnail of List App Landing Page' />
-          </a>
-          <a href='https://fredlist.app' target='_blank' rel="noopener noreferrer">
-            <Thumbnail src={Dash} alt='thumbnail of List App Dash Page' />
-          </a>
-        </ListDiv>
-
-      </Div1>
 
 
       <Footer/>
