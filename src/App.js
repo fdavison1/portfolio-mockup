@@ -161,15 +161,13 @@ background: #f3b54a;
     width: 400px
     flex-direction: column
     height: 100vh
-  }
-  `
+  }`
 
 const Banner2 = styled.div`
 background: #6e7889
   padding: 35px;
   border-radius: 3px;
   display: flex
-  height: 200px
   align-items: center
   width: 1000px
   @media (max-width: 500px){
@@ -192,7 +190,12 @@ const ListApp = styled.div`
 
 
 
-const MobileDiv = styled.div``
+const MobileDiv = styled.div`
+display: flex
+align-items: center
+@media (max-width: 500px){
+  flex-direction: column
+}`
 
 function App() {
   return (
