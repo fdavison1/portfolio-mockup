@@ -109,7 +109,7 @@ const Paragraph = styled.p`
 font-size: 1.2rem
 font-family: sans-serif
 font-weight: 200
-text-align: left
+text-align: center
 margin: 10px
 @media (max-width: 500px){
   text-align: center
@@ -240,7 +240,7 @@ function App() {
           </a>
           <ListApp>
           <A href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
-          <SubTitle>List App</SubTitle>
+          <SubTitle>fredlist.app</SubTitle>
           </A>
           <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain.</Paragraph>
           </ListApp>
