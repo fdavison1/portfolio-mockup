@@ -32,11 +32,13 @@ nav {
 }
 
 img {
-  height: 65px;
-  margin: 5px 0;
+  height: 150px;
+  margin: 10px;
 }
 
 .img, .img2 {
+  height: 65px;
+  margin: 5px 0;
   margin: 5px 0;
   background-repeat: no-repeat;
   display: flex;
