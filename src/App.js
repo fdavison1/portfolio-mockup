@@ -7,6 +7,7 @@ import Headshot from './assets/Fred.jpg'
 import Footer from './Footer'
 import html from './assets/HTML5_Badge.svg'
 import css from './assets/css3.png'
+import phone from './assets/phone.jpg'
 
 const Title = styled.h1`
 color: #262626
@@ -89,7 +90,8 @@ opacity: .85
 }`
 
 const A = styled.a`
-text-decoration: none`
+text-decoration: none
+color: #262626`
 
 
 const Thumbnail = styled.img`
@@ -208,12 +210,11 @@ display: flex
 justify-content: center
 flex-direction: column
 align-items: center
-border: 1px solid #999999
 height: 250px
 width: 250px
 margin: 10px
 border-radius: 3px
-background: lightgray
+background: rgb(210, 212, 217)
 `
 
 const BoxTitle = styled.div`
@@ -227,11 +228,17 @@ function App() {
     <div className="App">
       <header>
         <nav>
-          <A href='#about'>
-            <SubTitle>about</SubTitle>
+          <A href='#skills'>
+            <SubTitle>skills</SubTitle>
           </A>
           <A href='#portfolio'>
             <SubTitle>portfolio</SubTitle>
+          </A>
+          <A href='#about'>
+            <SubTitle>about</SubTitle>
+          </A>
+          <A href='#contact'>
+            <SubTitle>contact</SubTitle>
           </A>
 
         </nav>
@@ -255,6 +262,7 @@ function App() {
       </header>
 
       <Div1>
+      <A name='skills'></A>
         <Title2>skills</Title2>
         <BoxContainer>
           <Box>
@@ -294,7 +302,7 @@ function App() {
       </Div1>
 
       <Div1>
-        <A name='about'></A>
+        <A name='portfolio'></A>
         <Title2>portfolio</Title2>
         <AboutDiv>
           <Banner2>
@@ -313,8 +321,8 @@ function App() {
         </AboutDiv>
       </Div1>
 
-      <Div2 className='about'>
         <A name='about'></A>
+      <Div2 className='about'>
         <Title2>about</Title2>
         <AboutDiv>
           <Banner>
@@ -331,12 +339,17 @@ function App() {
       </Div2>
 
       <Div1>
+      <A name='contact'></A>
         <Title2>contact</Title2>
+        <Banner>
+
         <ul>
-          <ListItem><A>GitHub</A></ListItem>
-          <ListItem><A>LinkedIn</A></ListItem>
-          <ListItem><A>Email</A></ListItem>
+          <ListItem><A href="https://github.com/fdavison1" target="_blank"><span>GitHub:</span> https://github.com/fdavison1</A></ListItem>
+          <ListItem><A href="https://www.linkedin.com/in/fdavison1/" target="_blank"><span>LinkedIn:</span> https://www.linkedin.com/in/fdavison1</A></ListItem>
+          <ListItem><A><span>Email: </span> fred.davison@outlook.com</A></ListItem>
         </ul>
+        <HeadshotImg src={phone}></HeadshotImg>
+        </Banner>
       </Div1>
 
 
