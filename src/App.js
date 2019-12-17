@@ -118,10 +118,11 @@ text-align: center
 margin: 10px
 @media (max-width: 500px){
   text-align: center
+  color: #262626
 }`
 
 const HeadshotImg = styled.img`
-border: 1px solid #262626
+border: 1px solid #999999
 height: 300px
 border-radius: 50%
 margin: 20px
@@ -151,6 +152,7 @@ line-height: 2rem
   list-style-type: none
   text-align: center
   padding: 0
+  font-weight: 300
 }`
 
 const Banner = styled.div`
@@ -222,11 +224,16 @@ font-size: 2rem
 font-family: sans-serif
 font-weight: 200
 `
+const Hide = styled.div`
+@media (max-width: 500px){
+  display: none
+}`
 
 function App() {
   return (
     <div className="App">
       <header>
+          <Hide>
         <nav>
           <A href='#skills'>
             <SubTitle>skills</SubTitle>
@@ -242,6 +249,7 @@ function App() {
           </A>
 
         </nav>
+          </Hide>
         <Icons>
           <a href='https://github.com/fdavison1' target='_blank'
             rel="noopener noreferrer">
@@ -260,6 +268,8 @@ function App() {
 
 
       </header>
+
+      <Hide>
 
       <Div1>
       <A name='skills'></A>
@@ -300,6 +310,7 @@ function App() {
           </Box>
         </BoxContainer>
       </Div1>
+      </Hide>
 
       <Div1>
         <A name='portfolio'></A>
@@ -338,6 +349,8 @@ function App() {
         </AboutDiv>
       </Div2>
 
+      <Hide>
+
       <Div1>
       <A name='contact'></A>
         <Title2>contact</Title2>
@@ -351,6 +364,7 @@ function App() {
         <HeadshotImg src={phone}></HeadshotImg>
         </Banner>
       </Div1>
+      </Hide>
 
 
 
