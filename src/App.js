@@ -93,34 +93,6 @@ const A = styled.a`
 text-decoration: none;
 color: #262626;`
 
-
-// const Thumbnail = styled.img`
-// transition: .5s ease;
-// height: 300px;
-// margin: 20px;
-// border-radius: 5px;
-// box-sizing: border-box;
-// border: 1px solid #999999;
-// &:hover {
-//   border: 2px solid purple;
-//   cursor: pointer;
-// }
-// @media (max-width: 500px){
-//   height: 200px;
-// }`
-
-// const Paragraph = styled.p`
-// color: white;
-// font-size: 1.2rem;
-// font-family: sans-serif;
-// font-weight: 200;
-// text-align: center;
-// margin: 10px;
-// @media (max-width: 500px){
-//   text-align: center;
-//   color: #262626;
-// }`
-
 const HeadshotImg = styled.img`
 border: 1px solid #999999;
 height: 300px;
@@ -171,39 +143,14 @@ background: #f3b54a;
     height: 100vh;
   }`
 
-// const Banner2 = styled.div`
-// background: #6e7889;
-//   padding: 35px;
-//   border-radius: 3px;
-//   display: flex;
-//   align-items: center;
-//   width: 1000px;
-//   @media (max-width: 500px){
-//     padding: 0;
-//     flex-decoration: column;
-//     height: auto;
-//     width: 400px;
-//   }`
-
 const Break = styled.br`
   display: none;
   @media (max-width: 500px){
     display: block;
   }`
 
-// const ListApp = styled.div`
-// @media (max-width: 500px){
-//   text-align: center;
-// }`
-
-// const MobileDiv = styled.div`
-// display: flex;
-// align-items: center;
-// @media (max-width: 500px){
-//   flex-direction: column;
-// }`
-
 const BoxContainer = styled.div`
+max-width: 1100px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;`
@@ -320,31 +267,6 @@ function App() {
       <Portfolio />
       </AboutDiv>
 </Div1>
-
-      {/* <Div1>
-        <A name='portfolio'></A>
-        <Title2>portfolio</Title2>
-        <AboutDiv>
-          <Banner2>
-            <MobileDiv>
-              <a href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
-                <Thumbnail src={Landing} />
-              </a>
-              <ListApp>
-                <A href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
-                  <SubTitle id='fredlist'>fredlist.app</SubTitle>
-                </A>
-                <Paragraph>A simple list app designed to demonstrate skills and technologies learned while participating in an immersive 13-week web development program at DevMountain.</Paragraph>
-              </ListApp>
-            </MobileDiv>
-          </Banner2>
-              <ListApp>
-              <a href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
-                <Thumbnail src={Landing} />
-              </a>
-              </ListApp>
-        </AboutDiv>
-      </Div1> */}
 
         <A name='about'></A>
       <Div2 className='about'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Landing from './assets/screenshots/landing.png'
+import fnl from './assets/screenshots/fnl.png'
 
 const Wrapper = styled.div`
 background: white;`
@@ -39,6 +40,7 @@ background: #6e7889;
   display: flex;
   align-items: center;
   width: 1000px;
+  margin: 25px;
   @media (max-width: 500px){
     padding: 0;
     flex-decoration: column;
@@ -98,14 +100,14 @@ const Portfolio = () => {
               
             <Banner2>
             <MobileDiv>
-              <a href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
-                <Thumbnail src={Landing} />
+              <a href='https://fridaynightlite.app/' target='_blank' rel="noopener noreferrer">
+                <Thumbnail src={fnl} />
               </a>
               <ListApp>
-              <A href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
+              <A href='https://fridaynightlite.app/' target='_blank' rel="noopener noreferrer">
                   <SubTitle id='fredlist'>fridaynightlite.app</SubTitle>
                 </A>
-                <Paragraph>A simple list app designed to demonstrate skills and tec</Paragraph>
+                <Paragraph>A clone of ESPN's game cast functionality intended for use by high school football teams. A group project designed and built over two weeks.</Paragraph>
               </ListApp>
               </MobileDiv>
               </Banner2>
