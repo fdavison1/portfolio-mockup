@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css'
-import Landing from './assets/screenshots/landing.png'
-// import Dash from './assets/screenshots/dash.png'
+// import Landing from './assets/screenshots/landing.png'
+import Portfolio from './Portfolio'
 import Headshot from './assets/Fred.jpg'
 import Footer from './Footer'
 import html from './assets/HTML5_Badge.svg'
@@ -10,223 +10,224 @@ import css from './assets/css3.png'
 import phone from './assets/phone.jpg'
 
 const Title = styled.h1`
-color: #262626
+color: #262626;
 font-family: Poppins, sans-serif;
-font-weight: 700
-padding: 0
-margin: 10px
-line-height: 5rem
-font-size: 5rem
-opacity: 1`
+font-weight: 700;
+padding: 0;
+margin: 10px;
+line-height: 5rem;
+font-size: 5rem;
+opacity: 1;`
 
 const Title2 = styled.h1`
-color: #262626
+color: #262626;
 font-family:  sans-serif;
-font-weight: 200
-padding: 0
-margin: 0
-font-size: 2.75rem
-opacity: 1`
+font-weight: 200;
+padding: 0;
+margin: 0;
+font-size: 2.75rem;
+opacity: 1;`
 
 const SubTitle = styled.h3`
 transition: color .5s ease;
-font-size: 2rem
-margin: 0
-color: #262626
-font-family: sans-serif
-font-weight: 300
+font-size: 2rem;
+margin: 0;
+color: #262626;
+font-family: sans-serif;
+font-weight: 300;
 &:hover {
-  color: purple
-  cursor: pointer
+  color: purple;
+  cursor: pointer;
 }
 `
 
 const TitleDiv = styled.div`
-padding: 5px
-opacity: .9
+padding: 5px;
+opacity: .9;
 `
 
 const Div1 = styled.div`
-display: flex
-flex-direction: column
-align-items: center
-justify-content: center
-box-sizing: border-box
-padding: 50px
-background: white
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+padding: 50px;
+background: white;
 @media (max-width: 500px){
   background: #6e7889;
-  margin: 0
-  padding: 0
-  height: 100vh
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }`
 
 const Div2 = styled.div`
-display: flex
-flex-direction: column
-align-items: center
-justify-content: center
-box-sizing: border-box
-padding: 50px
-background: white
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+padding: 50px;
+background: white;
 @media (max-width: 500px){
   background: #f3b54a;
-  margin: 0
-  padding: 0
+  margin: 0;
+  padding: 0;
 }`
 
 const Icons = styled.div`
-position: fixed
-right: 25px
-bottom: 15px
-display: flex
-flex-direction: column
-align-items: center
-justify-content: center
-opacity: .85
+position: fixed;
+right: 25px;
+bottom: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+opacity: .85;
 @media (max-width: 500px){
-  position: absolute
-  bottom: 15px
+  position: absolute;
+  bottom: 15px;
 }`
 
 const A = styled.a`
-text-decoration: none
-color: #262626`
+text-decoration: none;
+color: #262626;`
 
 
-const Thumbnail = styled.img`
-transition: .5s ease
-height: 300px
-margin: 20px
-border-radius: 5px
-box-sizing: border-box
-border: 1px solid #999999
-&:hover {
-  border: 2px solid purple
-  cursor: pointer
-}
-@media (max-width: 500px){
-  height: 200px
-}`
+// const Thumbnail = styled.img`
+// transition: .5s ease;
+// height: 300px;
+// margin: 20px;
+// border-radius: 5px;
+// box-sizing: border-box;
+// border: 1px solid #999999;
+// &:hover {
+//   border: 2px solid purple;
+//   cursor: pointer;
+// }
+// @media (max-width: 500px){
+//   height: 200px;
+// }`
 
-const Paragraph = styled.p`
-color: white
-font-size: 1.2rem
-font-family: sans-serif
-font-weight: 200
-text-align: center
-margin: 10px
-@media (max-width: 500px){
-  text-align: center
-  color: #262626
-}`
+// const Paragraph = styled.p`
+// color: white;
+// font-size: 1.2rem;
+// font-family: sans-serif;
+// font-weight: 200;
+// text-align: center;
+// margin: 10px;
+// @media (max-width: 500px){
+//   text-align: center;
+//   color: #262626;
+// }`
 
 const HeadshotImg = styled.img`
-border: 1px solid #999999
-height: 300px
-border-radius: 50%
-margin: 20px
-cursor: default`
+border: 1px solid #999999;
+height: 300px;
+border-radius: 50%;
+margin: 20px;
+cursor: default;`
 
 const AboutDiv = styled.div`
-display: flex
-align-items: center
-margin: 15px
-border-radius: 10px
-padding: 20px 0
-box-sizing: border-box
-display: flex
-justify-content: center
+display: flex;
+align-items: center;
+margin: 15px;
+border-radius: 10px;
+padding: 20px 0;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+background: white;
 `
 
 const ListItem = styled.li`
-font-family: sans-serif
-font-weight: 200
-font-size: 1.2rem
-text-align: left
-line-height: 2rem
+font-family: sans-serif;
+font-weight: 200;
+font-size: 1.2rem;
+text-align: left;
+line-height: 2rem;
 @media (max-width: 500px){
-  font-size: 1rem
-  line-height: 1.5rem
-  width: 400px
-  list-style-type: none
-  text-align: center
-  padding: 0
-  font-weight: 300
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 400px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-weight: 300;
 }`
 
 const Banner = styled.div`
 background: #f3b54a;
   padding: 35px;
   border-radius: 3px;
-  display: flex
-  height: 200px
-  align-items: center
-  width: 1000px
+  display: flex;
+  height: 200px;
+  align-items: center;
+  width: 1000px;
   @media (max-width: 500px){
-    padding: 0
-    width: 400px
-    flex-direction: column
-    height: 100vh
+    padding: 0;
+    width: 400px;
+    flex-direction: column;
+    height: 100vh;
   }`
 
-const Banner2 = styled.div`
-background: #6e7889
-  padding: 35px;
-  border-radius: 3px;
-  display: flex
-  align-items: center
-  width: 1000px
-  @media (max-width: 500px){
-    padding: 0
-    flex-decoration: column
-    height: auto
-    width: 400px
-  }`
+// const Banner2 = styled.div`
+// background: #6e7889;
+//   padding: 35px;
+//   border-radius: 3px;
+//   display: flex;
+//   align-items: center;
+//   width: 1000px;
+//   @media (max-width: 500px){
+//     padding: 0;
+//     flex-decoration: column;
+//     height: auto;
+//     width: 400px;
+//   }`
 
 const Break = styled.br`
-  display: none
+  display: none;
   @media (max-width: 500px){
-    display: block
+    display: block;
   }`
 
-const ListApp = styled.div`
-@media (max-width: 500px){
-  text-align: center
-}`
+// const ListApp = styled.div`
+// @media (max-width: 500px){
+//   text-align: center;
+// }`
 
-const MobileDiv = styled.div`
-display: flex
-align-items: center
-@media (max-width: 500px){
-  flex-direction: column
-}`
+// const MobileDiv = styled.div`
+// display: flex;
+// align-items: center;
+// @media (max-width: 500px){
+//   flex-direction: column;
+// }`
 
 const BoxContainer = styled.div`
-display: flex
-flex-wrap: wrap
-justify-content: center`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;`
 
 const Box = styled.div`
-display: flex
-justify-content: center
-flex-direction: column
-align-items: center
-height: 250px
-width: 250px
-margin: 10px
-border-radius: 3px
-background: rgb(210, 212, 217)
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 250px;
+width: 250px;
+margin: 10px;
+border-radius: 3px;
+background: rgb(210, 212, 217);
 `
 
 const BoxTitle = styled.div`
-font-size: 2rem
-font-family: sans-serif
-font-weight: 200
+font-size: 2rem;
+font-family: sans-serif;
+font-weight: 200;
 `
 const Hide = styled.div`
 @media (max-width: 500px){
-  display: none
+  display: none;
 }`
 
 function App() {
@@ -312,7 +313,15 @@ function App() {
       </Div1>
       </Hide>
 
-      <Div1>
+<Div1>
+<A name='portfolio'></A>
+        <Title2>portfolio</Title2>
+      <AboutDiv>
+      <Portfolio />
+      </AboutDiv>
+</Div1>
+
+      {/* <Div1>
         <A name='portfolio'></A>
         <Title2>portfolio</Title2>
         <AboutDiv>
@@ -329,8 +338,13 @@ function App() {
               </ListApp>
             </MobileDiv>
           </Banner2>
+              <ListApp>
+              <a href='https://fredlist.app/' target='_blank' rel="noopener noreferrer">
+                <Thumbnail src={Landing} />
+              </a>
+              </ListApp>
         </AboutDiv>
-      </Div1>
+      </Div1> */}
 
         <A name='about'></A>
       <Div2 className='about'>
