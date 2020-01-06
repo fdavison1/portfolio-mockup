@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Landing from './assets/screenshots/landing.png'
-import fnl from './assets/screenshots/fnl.png'
+import Landing from '../assets/screenshots/landing.png'
+import fnl from '../assets/screenshots/fnl.png'
 
 const Wrapper = styled.div`
 background: white;`
