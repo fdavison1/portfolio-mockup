@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
 height: 50px;
@@ -24,23 +25,23 @@ h3 {
     justify-content: space-around;
 }`
 
-const A = styled.a`
+const A = styled(Link)`
 text-decoration: none;`
 
 const Header = () => {
     return (
         <Wrapper>
             <div className="nav">
-                <A href='#skills'>
+                <A to='/skills'>
                     <h3>skills</h3>
                 </A>
-                <A href='#portfolio'>
+                <A to='/portfolio'>
                     <h3>portfolio</h3>
                 </A>
-                <A href='#about'>
+                <A to='/'>
                     <h3>about</h3>
                 </A>
-                <A href='#contact'>
+                <A to='/contact'>
                     <h3>contact</h3>
                 </A>
             </div>

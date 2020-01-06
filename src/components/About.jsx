@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div``
 
-const Portfolio = () => {
+const About = () => {
     return (
         <Wrapper>
-            Portfolio
+            About
         </Wrapper>
     )
 }
 
-export default Portfolio
+export default About

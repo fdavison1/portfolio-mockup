@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Footer from './Footer'
 import Header from './Header'
 // import Portfolio from './Portfolio'
+import routes from '../routes'
 import phone from '../assets/phone.jpg'
 
 const Wrapper = styled.div`
@@ -70,7 +71,7 @@ const Main = () => {
                 < Header />
                 
 
-                {/* routes */}
+                {routes}
            
 
             </div>
