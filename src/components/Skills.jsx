@@ -4,6 +4,7 @@ import html from '../assets/HTML5_Badge.svg'
 import css from '../assets/css3.png'
 
 const Wrapper = styled.div`
+background: white;
 height: 100%;
 padding-bottom: 100px;
 box-sizing: border-box;

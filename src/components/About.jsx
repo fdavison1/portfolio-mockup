@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import Headshot from '../assets/Fred.jpg'
 
 const Wrapper = styled.div`
+background: white;
 display: flex;
 align-items: center;
 justify-content: center;
-height: 100%;
+height: 100vh;
 padding-bottom: 100px;
 box-sizing: border-box;
 li {

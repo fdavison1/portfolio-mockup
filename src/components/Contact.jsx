@@ -23,8 +23,8 @@ span {
     font-weight: bold;
 }
 .splash {
+    opacity: .8;
     background: url(${phone});
-    /* background-position: 0 -50px; */
     background-size: contain;
     display: flex;
     align-items: center;
