@@ -32,14 +32,14 @@ const Header = () => {
     return (
         <Wrapper>
             <div className="nav">
-                <A to='/skills'>
-                    <h3>skills</h3>
+                <A to='/'>
+                    <h3>about</h3>
                 </A>
                 <A to='/portfolio'>
                     <h3>portfolio</h3>
                 </A>
-                <A to='/'>
-                    <h3>about</h3>
+                <A to='/skills'>
+                    <h3>skills</h3>
                 </A>
                 <A to='/contact'>
                     <h3>contact</h3>

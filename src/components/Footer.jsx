@@ -34,7 +34,7 @@ span {
     align-items: center;
     justify-content: space-between;
     opacity: .85;
-    width: 140px;
+    width: 150px;
 }
 .img, .img2 {
   height: 65px;
