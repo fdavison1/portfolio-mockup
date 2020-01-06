@@ -54,6 +54,9 @@ h2{
     background: #fff;
     /* position: sticky; */
     /* bottom: 0; */
+}
+.routes {
+    height: 100%;
 }`
 
 const Main = () => {
@@ -70,8 +73,9 @@ const Main = () => {
             <div className='container'>
                 < Header />
                 
-
+                <div className="routes">
                 {routes}
+                </div>
            
 
             </div>
