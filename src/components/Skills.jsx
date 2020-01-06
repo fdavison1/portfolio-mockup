@@ -42,6 +42,7 @@ h4 {
     margin: 10px;
     border-radius: 5px;
     background: rgb(210, 212, 217);
+    box-shadow: 1px 1px 2px #262626;
 }`
 
 const Skills = () => {

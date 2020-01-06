@@ -15,10 +15,10 @@ h3 {
     transition: all ease 1s;
     color: white;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 100;
     &:hover {
-        color: purple;
+        color: rgb(112,191,219);
     }
 }
 .nav {

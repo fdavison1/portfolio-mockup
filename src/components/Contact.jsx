@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import phone from '../assets/phone.jpg'
 
 const Wrapper = styled.div`
+position: relative;
+top: 50px;
 height: 100%;
 display: flex;
 justify-content: center;
@@ -15,24 +17,23 @@ ul {
 li {
     list-style: none;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin: 10px 0;
 }
 span {
     font-weight: bold;
 }
-.splash {
-    opacity: .8;
+.phone {
     background: url(${phone});
-    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    position: relative;
-    top: 50px;
-    padding-bottom: 50px;
+    align-items: center;
 }`
 
 const A = styled.a`
@@ -42,7 +43,7 @@ const A = styled.a`
 const Contact = () => {
     return (
         <Wrapper>
-            <div className="splash">
+            <div className="phone">
                 <ul>
                     <li><A href="https://github.com/fdavison1" target="_blank"><span>GitHub:</span> https://github.com/fdavison1</A></li>
                     <li><A href="https://www.linkedin.com/in/fdavison1/" target="_blank"><span>LinkedIn:</span> https://www.linkedin.com/in/fdavison1</A></li>

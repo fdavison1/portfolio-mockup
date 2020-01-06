@@ -11,6 +11,7 @@ z-index: 2;
 height: 100px;
 background: #262626;
 color: white;
+/* color: rgb(112,191,219); */
 width: 100%;
 display: flex;
 align-items: center;
@@ -20,12 +21,12 @@ box-sizing: border-box;
 /* position: fixed; */
 /* bottom: 0; */
 p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: sans-serif;
     font-weight: 100;
 }
 span {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .left {

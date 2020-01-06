@@ -2,9 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from './Footer'
 import Header from './Header'
-// import Portfolio from './Portfolio'
 import routes from '../routes'
-import phone from '../assets/phone.jpg'
+import react from '../assets/react.svg'
 
 const Wrapper = styled.div`
 display: flex;
@@ -26,34 +25,46 @@ h2{
     font-weight: 200;
     padding: 0;
     margin: 0;
-    font-size: 2.75rem;
+    font-size: 3rem;
 
 }
 .splash {
-    background: url(${phone});
+    background: url(${react});
+    background-size: 50px 50px;
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
+    display: flex;
+    align-items: center;
+    background-position: center center;
 }
 .overlay {
     flex-direction: column;
     display: flex;
-    position: relative;
+    position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(112,120,136, 0.3);
     align-items: center;
     justify-content: center;
+    z-index: 2;
+    color: #262626;
+}
+.overlay h1 {
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+.overlay h2 {
+    position: relative;
+    top: 150px;
+    font-weight: bold;
 }
 .container {
     height: calc(100vh - 100px);
     width: 100vw;
     background: #fff;
-    /* position: sticky; */
-    /* bottom: 0; */
 }
 .routes {
     height: 100%;
@@ -63,10 +74,12 @@ const Main = () => {
     return (
         <Wrapper>
             <div name='top' className="splash">
+            </div>
             <div className="overlay">
                 <h1>Fred Davison</h1>
-                <h2>full-stack web developer</h2>
             </div>
+            <div className="overlay">
+                <h2>full-stack web developer</h2>
             </div>
 
 

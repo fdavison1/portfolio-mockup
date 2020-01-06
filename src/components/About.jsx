@@ -15,7 +15,7 @@ box-sizing: border-box;
 li {
     list-style: none;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin: 10px 0;
 }
@@ -28,10 +28,12 @@ span {
 
 const HeadshotImg = styled.img`
     border: 1px solid #999999;
-    height: 300px;
+    height: 400px;
     border-radius: 50%;
     margin: 20px;
-    cursor: default;`
+    cursor: default;
+    border: solid 8px #262626;
+    `
 
 const About = () => {
     return (
@@ -40,7 +42,7 @@ const About = () => {
 
             <HeadshotImg src={Headshot} />
             <ul>
-                <li><span>Student at DevMountain</span> Immersive Web-Development Course</li>
+                <li><span>DevMountain Graduate</span> Immersive Web-Development Course</li>
                 <li><span>BBA Economics</span> University of Georgia</li>
                 <li><span>BS Industrial Engineering</span> Texas Tech University</li>
                 <li><span>3 Years as Trainmaster </span> Los Angeles and Richmond, CA</li>
