@@ -35,8 +35,6 @@ const About = () => {
         <Wrapper>
 
 
-            {/* <h4>about</h4> */}
-
             <HeadshotImg src={Headshot} />
             <ul>
                 <li><span>Student at DevMountain</span> Immersive Web-Development Course</li>

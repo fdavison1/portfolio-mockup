@@ -6,6 +6,8 @@ import pinkcat from '../assets/cat-pink.png'
 import pinkln from '../assets/In-pink.png'
 
 const Wrapper = styled.div`
+opacity: .8;
+z-index: 2;
 height: 100px;
 background: #262626;
 color: white;
