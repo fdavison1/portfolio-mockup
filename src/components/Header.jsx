@@ -6,15 +6,19 @@ height: 50px;
 background: #262626;
 display: flex;
 box-sizing: border-box;
-flex-direction: row-reverse;
+justify-content: center;
 h3 {
+    transition: all ease 1s;
     color: white;
     font-family: sans-serif;
     font-size: 1.5rem;
     font-weight: 100;
+    &:hover {
+        color: purple;
+    }
 }
 .nav {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
