@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from './Footer'
+import Header from './Header'
 // import Portfolio from './Portfolio'
 import phone from '../assets/phone.jpg'
 
@@ -63,7 +64,10 @@ const Main = () => {
             </div>
             </div>
 
+
             <div className='container'>
+                < Header />
+                
 
                 {/* routes */}
            
