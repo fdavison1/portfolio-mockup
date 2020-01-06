@@ -168,7 +168,7 @@ import Main from './components/Main'
 // background: rgb(210, 212, 217);
 // `
 
-// const BoxTitle = styled.div`
+// // const BoxTitle = styled.div`
 // font-size: 2rem;
 // font-family: sans-serif;
 // font-weight: 200;
