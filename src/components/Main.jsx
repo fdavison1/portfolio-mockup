@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Portfolio from './Portfolio'
+import Footer from './Footer'
+// import Portfolio from './Portfolio'
 import phone from '../assets/phone.jpg'
 
 const Wrapper = styled.div`
@@ -46,7 +47,7 @@ h2{
     justify-content: center;
 }
 .container {
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
     background: #fff;
 }`
@@ -64,9 +65,11 @@ const Main = () => {
 
             <div className='container'>
 
-            {/* <Portfolio /> */}
+                {/* routes */}
            
             </div>
+
+            <Footer />
         </Wrapper>
     )
 }

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   background: url('./assets/phone.jpg');
   background-size: contain;
@@ -118,4 +118,9 @@ ul {
   color: white;
 }
 
+ */
 
+ body {
+  margin: 0;
+  background: #262626;
+}

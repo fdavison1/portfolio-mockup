@@ -312,7 +312,8 @@ import Main from './components/Main'
 // }
 
 const Wrapper = styled.div`
-text-align: center;`
+text-align: center;
+`
 
 const App = () => {
   return (
