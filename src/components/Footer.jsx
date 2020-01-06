@@ -15,6 +15,8 @@ align-items: center;
 justify-content: space-between;
 padding: 0 50px;
 box-sizing: border-box;
+/* position: fixed; */
+/* bottom: 0; */
 p {
     font-size: 2rem;
     font-family: sans-serif;
@@ -86,7 +88,9 @@ const Footer = () => {
         <Wrapper>
             <div className="footer">
             <div className="left">
+                {/* <a href="#top"> */}
                 <p><span>Fred Davison</span> 2019</p>
+                {/* </a> */}
             </div>
 
             <div className="right">

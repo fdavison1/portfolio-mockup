@@ -51,13 +51,14 @@ h2{
     height: calc(100vh - 100px);
     width: 100vw;
     background: #fff;
+    /* position: sticky; */
+    /* bottom: 0; */
 }`
 
 const Main = () => {
     return (
         <Wrapper>
-
-            <div className="splash">
+            <div name='top' className="splash">
             <div className="overlay">
                 <h1>Fred Davison</h1>
                 <h2>full-stack web developer</h2>
@@ -71,8 +72,8 @@ const Main = () => {
 
                 {/* routes */}
            
-            </div>
 
+            </div>
             <Footer />
         </Wrapper>
     )
