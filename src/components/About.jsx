@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import Headshot from '../assets/Fred.jpg'
 
 const Wrapper = styled.div`
+position: relative;
+top: 50px;
 background: white;
 display: flex;
 align-items: center;
 justify-content: center;
-height: 100vh;
-padding-bottom: 100px;
+height: 100%;
+padding-bottom: 150px;
 box-sizing: border-box;
 li {
     list-style: none;

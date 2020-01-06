@@ -4,9 +4,11 @@ import html from '../assets/HTML5_Badge.svg'
 import css from '../assets/css3.png'
 
 const Wrapper = styled.div`
+position: relative;
+top: 50px;
 background: white;
 height: 100%;
-padding-bottom: 100px;
+padding-bottom: 150px;
 box-sizing: border-box;
 display: flex;
 justify-content: center;
@@ -38,7 +40,7 @@ h4 {
     height: 250px;
     width: 250px;
     margin: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     background: rgb(210, 212, 217);
 }`
 
