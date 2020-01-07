@@ -29,6 +29,9 @@ img {
         border-color: rgb(112,191,219);
         cursor: pointer;
     }
+    @media (max-width: 500px){
+        display: none;
+    }
 }
 p {
     text-align: justify;
@@ -46,6 +49,10 @@ p {
     flex-direction: column;
     align-content: center;
     box-shadow: 1px 1px 2px #262626;
+    @media (max-width: 500px){
+        height: 200px;
+        /* width: auto; */
+    }
 }
 .text {
     font-family: sans-serif;

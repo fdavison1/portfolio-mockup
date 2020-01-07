@@ -12,15 +12,27 @@ justify-content: center;
 height: 100%;
 padding-bottom: 150px;
 box-sizing: border-box;
+@media (max-width: 500px){
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
 li {
     list-style: none;
     font-family: sans-serif;
     font-size: 2rem;
     font-weight: 300;
     margin: 10px 0;
+    @media (max-width: 500px){
+       font-size: 1rem; 
+    }
 }
 ul {
     text-align: left;
+    @media (max-width: 500px){
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
 }
 span {
     font-weight: bold;
@@ -32,8 +44,18 @@ const HeadshotImg = styled.img`
     border-radius: 50%;
     margin: 20px;
     cursor: default;
-    border: solid 8px #262626;
+    border: solid 1px #262626;
+    box-shadow: 1px 1px 2px #262626;
+    @media (max-width: 500px){
+        height: 200px;
+    }
     `
+const Break = styled.br`
+display: none;
+ @media (max-width: 500px){
+        display: block;
+        height: 20px;
+    }`
 
 const About = () => {
     return (
@@ -42,11 +64,11 @@ const About = () => {
 
             <HeadshotImg src={Headshot} />
             <ul>
-                <li><span>DevMountain Graduate</span> Immersive Web-Development Course</li>
-                <li><span>BBA Economics</span> University of Georgia</li>
-                <li><span>BS Industrial Engineering</span> Texas Tech University</li>
-                <li><span>3 Years as Trainmaster </span> Los Angeles and Richmond, CA</li>
-                <li><span>Manager of Logistics</span> Philmont Scout Ranch</li>
+                <li><span>DevMountain Graduate</span><Break/> Immersive Web-Development Course</li>
+                <li><span>BBA Economics</span><Break/> University of Georgia</li>
+                <li><span>BS Industrial Engineering</span><Break/> Texas Tech University</li>
+                <li><span>3 Years as Trainmaster </span><Break/> Los Angeles and Richmond, CA</li>
+                <li><span>Manager of Logistics</span><Break/> Philmont Scout Ranch</li>
             </ul>
 
 

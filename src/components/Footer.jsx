@@ -20,6 +20,9 @@ padding: 0 50px;
 box-sizing: border-box;
 /* position: fixed; */
 /* bottom: 0; */
+@media (max-width: 500px){
+       display: none; 
+      }
 p {
     font-size: 2.5rem;
     font-family: sans-serif;

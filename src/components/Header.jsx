@@ -20,12 +20,18 @@ h3 {
     &:hover {
         color: rgb(112,191,219);
     }
+    @media (max-width: 500px){
+        font-size: 1.2rem;   
+    }
 }
 .nav {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 500px){
+        width: 100%;
+    }
 }`
 
 const A = styled(Link)`
