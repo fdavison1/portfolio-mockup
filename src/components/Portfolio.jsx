@@ -13,11 +13,20 @@ background: white;
 height: 100%;
 padding-bottom: 150px;
 box-sizing: border-box;
-h2 {
+@media (max-width: 500px){
+        flex-direction: column;
+        padding-bottom: 0;
+        position: static;
+        height: calc(100vh - 50px);
+    }
+.box h2 {
     transition: 1s all ease;
     &:hover {
         color: rgb(112,191,219);
         cursor: pointer;
+    }
+    @media (max-width: 500px){
+        font-size: 1.5rem;
     }
 }
 img {
@@ -30,12 +39,15 @@ img {
         cursor: pointer;
     }
     @media (max-width: 500px){
-        display: none;
+        height: 100px;
     }
 }
 p {
     text-align: justify;
     font-size: 1.25rem;
+    @media (max-width: 500px){
+        font-size: 1rem;
+    }
 }
 .box {
     width: 500px;
@@ -50,8 +62,10 @@ p {
     align-content: center;
     box-shadow: 1px 1px 2px #262626;
     @media (max-width: 500px){
-        height: 200px;
-        /* width: auto; */
+        width: 95%;
+        padding: 10px;
+        justify-content: center;
+        margin: 5px;
     }
 }
 .text {
@@ -59,6 +73,9 @@ p {
 }
 .image {
     margin-top: 25px;
+    @media (max-width: 500px){
+        margin: 0;
+    }
 }`
 
 const A = styled.a`
