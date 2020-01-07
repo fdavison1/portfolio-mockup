@@ -32,6 +32,11 @@ h3 {
     @media (max-width: 500px){
         width: 100%;
     }
+}
+.skills {
+    @media (max-width: 500px){
+        display: none;
+    }
 }`
 
 const A = styled(Link)`
@@ -47,7 +52,7 @@ const Header = () => {
                 <A to='/portfolio'>
                     <h3>portfolio</h3>
                 </A>
-                <A to='/skills'>
+                <A className='skills' to='/skills'>
                     <h3>skills</h3>
                 </A>
                 <A to='/contact'>
