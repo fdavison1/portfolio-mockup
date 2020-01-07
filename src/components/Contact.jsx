@@ -49,6 +49,7 @@ span {
 .phone-small {
     display: none;
     @media (max-width: 500px){
+    display: block;
     height: 200px;
     border-radius: 50%;
     margin: 25px;
